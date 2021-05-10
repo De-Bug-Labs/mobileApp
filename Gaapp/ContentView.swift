@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var infoPage = false
+    
     var body: some View {
         NavigationView{
             ZStack{
@@ -46,7 +47,7 @@ struct ContentView: View {
                     
                 }
             }
-        }
+        }.navigationBarBackButtonHidden(true)
         
     }
 }

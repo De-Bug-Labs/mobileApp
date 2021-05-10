@@ -17,21 +17,16 @@ struct material: View {
             VStack {
                 HStack{
                     VStack{
-                        Text("MATERIAL")
-                            .font(.system(size: 34))
+                        Image("paper-crafts").resizable().frame(width: 100, height: 100).padding(.top, 10)
+                        Text("MATERIAL DIDACTICO")
+                            .font(.system(size: 32))
                             .fontWeight(.bold)
                             .foregroundColor(Color.white)
                             .multilineTextAlignment(.center)
-                        Text("Videos didacticos para tu aprendizaje, para navegar simplemente deslizalos.")
-                            .font(.system(size: 25))
-                            .foregroundColor(Color.white)
-                            .multilineTextAlignment(.center)
-                            .padding([.top, .leading, .trailing], 30.0)
                     }
                 }.padding(.top, 50)
                 Spacer()
                 ScrollView(.vertical, showsIndicators: false) {
-                    
                     VStack{
                         ForEach(materialController.materiales, id: \.self){ material in
                             Link(destination: URL(string: material.link)!, label: {
@@ -40,12 +35,13 @@ struct material: View {
                                     icon: { Image(systemName: "book") }
 
                                 )
-                            }).font(.system(size: 25))
-                            .foregroundColor(Color.black).padding().background(Color(red: 240 / 255, green: 210 / 255, blue: 136 / 255)).cornerRadius(15)
+                            }).font(.system(size: 23))
+                            .foregroundColor(Color.white).padding(15).background(Color(red: 70 / 255, green: 70 / 255, blue: 70 / 255)).cornerRadius(15)
                         }
                     }
+                    .padding(.horizontal, 2)
                         
-                }.padding(.vertical, 70)
+                }.padding(.top, 30).padding(.bottom, 90)
             }.ignoresSafeArea()
         }
     }
