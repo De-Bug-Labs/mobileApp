@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A83FB4802648B86900D94497 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FB47F2648B86900D94497 /* home.swift */; };
+		A83FB4822648C36500D94497 /* material.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FB4812648C36500D94497 /* material.swift */; };
+		A83FB4842648C5F500D94497 /* MaterialModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FB4832648C5F500D94497 /* MaterialModel.swift */; };
+		A83FB4862648C63900D94497 /* MaterialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FB4852648C63900D94497 /* MaterialController.swift */; };
 		A85608352646578A00EAF423 /* GaappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85608342646578A00EAF423 /* GaappApp.swift */; };
 		A85608372646578A00EAF423 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85608362646578A00EAF423 /* ContentView.swift */; };
 		A85608392646578C00EAF423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85608382646578C00EAF423 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A83FB47F2648B86900D94497 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
+		A83FB4812648C36500D94497 /* material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = material.swift; sourceTree = "<group>"; };
+		A83FB4832648C5F500D94497 /* MaterialModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialModel.swift; sourceTree = "<group>"; };
+		A83FB4852648C63900D94497 /* MaterialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaterialController.swift; sourceTree = "<group>"; };
 		A85608312646578A00EAF423 /* Gaapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gaapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85608342646578A00EAF423 /* GaappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaappApp.swift; sourceTree = "<group>"; };
 		A85608362646578A00EAF423 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +65,10 @@
 				A85608382646578C00EAF423 /* Assets.xcassets */,
 				A856083D2646578C00EAF423 /* Info.plist */,
 				A856083A2646578C00EAF423 /* Preview Content */,
+				A83FB47F2648B86900D94497 /* home.swift */,
+				A83FB4812648C36500D94497 /* material.swift */,
+				A83FB4832648C5F500D94497 /* MaterialModel.swift */,
+				A83FB4852648C63900D94497 /* MaterialController.swift */,
 			);
 			path = Gaapp;
 			sourceTree = "<group>";
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83FB4822648C36500D94497 /* material.swift in Sources */,
+				A83FB4842648C5F500D94497 /* MaterialModel.swift in Sources */,
+				A83FB4802648B86900D94497 /* home.swift in Sources */,
 				A85608372646578A00EAF423 /* ContentView.swift in Sources */,
+				A83FB4862648C63900D94497 /* MaterialController.swift in Sources */,
 				A85608352646578A00EAF423 /* GaappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
