@@ -32,11 +32,11 @@ struct material: View {
                             Link(destination: URL(string: material.link)!, label: {
                                 Label(
                                     title: { Text(material.name) },
-                                    icon: { Image(systemName: "book") }
+                                    icon: { Image(systemName: "paperplane.fill") }
 
                                 )
-                            }).font(.system(size: 23))
-                            .foregroundColor(Color.white).padding(15).background(Color(red: 70 / 255, green: 70 / 255, blue: 70 / 255)).cornerRadius(15)
+                            }).padding(.vertical, 10).padding(.horizontal, 5).foregroundColor(.white).background(Color.green).cornerRadius(7.0)
+                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 3.0)).font(.system(size: 23))
                         }
                     }
                     .padding(.horizontal, 2)
