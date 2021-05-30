@@ -15,6 +15,7 @@
 		A85608372646578A00EAF423 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85608362646578A00EAF423 /* ContentView.swift */; };
 		A85608392646578C00EAF423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85608382646578C00EAF423 /* Assets.xcassets */; };
 		A856083C2646578C00EAF423 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A856083B2646578C00EAF423 /* Preview Assets.xcassets */; };
+		A8617AA72662DE1700358B37 /* contactos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8617AA62662DE1700358B37 /* contactos.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		A85608382646578C00EAF423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A856083B2646578C00EAF423 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A856083D2646578C00EAF423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8617AA62662DE1700358B37 /* contactos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = contactos.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +62,12 @@
 		A85608332646578A00EAF423 /* Gaapp */ = {
 			isa = PBXGroup;
 			children = (
+				A8617AA32662DB3B00358B37 /* MVC */,
+				A8617AA22662DAFE00358B37 /* Views */,
 				A85608342646578A00EAF423 /* GaappApp.swift */,
-				A85608362646578A00EAF423 /* ContentView.swift */,
 				A85608382646578C00EAF423 /* Assets.xcassets */,
 				A856083D2646578C00EAF423 /* Info.plist */,
 				A856083A2646578C00EAF423 /* Preview Content */,
-				A83FB47F2648B86900D94497 /* home.swift */,
-				A83FB4812648C36500D94497 /* material.swift */,
-				A83FB4832648C5F500D94497 /* MaterialModel.swift */,
-				A83FB4852648C63900D94497 /* MaterialController.swift */,
 			);
 			path = Gaapp;
 			sourceTree = "<group>";
@@ -79,6 +78,26 @@
 				A856083B2646578C00EAF423 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A8617AA22662DAFE00358B37 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A83FB4812648C36500D94497 /* material.swift */,
+				A83FB47F2648B86900D94497 /* home.swift */,
+				A85608362646578A00EAF423 /* ContentView.swift */,
+				A8617AA62662DE1700358B37 /* contactos.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A8617AA32662DB3B00358B37 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				A83FB4832648C5F500D94497 /* MaterialModel.swift */,
+				A83FB4852648C63900D94497 /* MaterialController.swift */,
+			);
+			path = MVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A83FB4822648C36500D94497 /* material.swift in Sources */,
+				A8617AA72662DE1700358B37 /* contactos.swift in Sources */,
 				A83FB4842648C5F500D94497 /* MaterialModel.swift in Sources */,
 				A83FB4802648B86900D94497 /* home.swift in Sources */,
 				A85608372646578A00EAF423 /* ContentView.swift in Sources */,
@@ -285,6 +305,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Gaapp/Preview Content\"";
+				DEVELOPMENT_TEAM = X4ZFTFXH3H;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Gaapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -306,6 +327,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Gaapp/Preview Content\"";
+				DEVELOPMENT_TEAM = X4ZFTFXH3H;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Gaapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

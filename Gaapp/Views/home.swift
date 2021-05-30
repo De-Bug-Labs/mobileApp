@@ -19,13 +19,13 @@ struct home: View {
                                 .font(.system(size: 30))
                                 .fontWeight(.bold)
                                 .foregroundColor(Color.white)
-                                .multilineTextAlignment(.center)
+                                .multilineTextAlignment(.center).padding(.top, 50)
                             Text("Aqui podras aprender a manejar elementos basicos de aplicaciones al igual que encontrar material de apoyo. Solo selecciona cualquiera de las opciones aqui abajo.")
                                 .font(.system(size: 25))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
                                 .padding([.top, .leading, .trailing], 30.0)
-                            Image("down-arrow").resizable().aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/).foregroundColor(Color.white).frame(width: 150, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).padding(.top, 60)
+                            Image(systemName: "arrow.down").resizable().aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/).frame(width: 100, height: 100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).padding(.top, 60).foregroundColor(.white)
                             Spacer()
                         
                     Spacer()
@@ -33,13 +33,18 @@ struct home: View {
             }
             .tabItem {
                 Text("Principal").font(.title)
-                Image(systemName: "house").font(.title)
+                Image(systemName: "house.fill").font(.title)
             }
             material()
             .tabItem {
                 Text("Material").font(.title)
-                Image(systemName: "book").font(.title)
+                Image(systemName: "archivebox.fill").font(.system(size: 50))
             }
+            contactos()
+                .tabItem {
+                    Text("Apoyo").font(.title)
+                    Image(systemName: "phone.fill")
+                }.font(.system(size: 50))
         }.navigationBarBackButtonHidden(true)
     }
 }
