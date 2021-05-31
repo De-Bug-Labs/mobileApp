@@ -7,6 +7,24 @@
 
 import SwiftUI
 
+extension String {
+    func load() -> UIImage {
+        
+        do {
+            guard let url = URL(string: self) else{
+                return UIImage()
+            }
+            let data: Data = try Data(contentsOf: url)
+            
+            return UIImage(data: data) ?? UIImage()
+        } catch  {
+            
+        }
+        
+        return UIImage()
+    }
+}
+
 struct material: View {
     
     var materialController = MaterialController()
@@ -29,14 +47,16 @@ struct material: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack{
                         ForEach(materialController.materiales, id: \.self){ material in
-                            Link(destination: URL(string: material.link)!, label: {
-                                Label(
-                                    title: { Text(material.name) },
-                                    icon: { Image(systemName: "paperplane.fill") }
-
-                                )
-                            }).padding(.vertical, 10).padding(.horizontal, 5).foregroundColor(.white).background(Color.green).cornerRadius(7.0)
-                            .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.white, lineWidth: 3.0)).font(.system(size: 23))
+                            HStack{
+                                Link(destination: URL(string: material.link)!, label: {
+                                    VStack{
+                                        Image(uiImage: material.thumbnail.load()).resizable().frame(width: 300, height: 200).padding(.horizontal, 20).padding(.top, 10)
+                                        Text(material.name).font(.system(size: 30)).fontWeight(.bold).padding(.bottom, 10)
+                                    }
+                                }).padding(.vertical, 6).padding(.horizontal, 1).foregroundColor(.black).background(Color(red: 195 / 255, green: 195 / 255, blue: 195 / 255)).cornerRadius(10.0)
+                                
+                            }.padding(.vertical, 10)
+                            
                         }
                     }
                     .padding(.horizontal, 2)
